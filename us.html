@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>us</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .container-fluid {
-            background-color: rgba(255, 255, 255, 0.158);
+        .container {
+
             border-radius: 50px;
 
         }
@@ -24,20 +26,21 @@
 
         body {
 
-            background-image: url("white.jpg");
+            background-color: #001840;
             background-size: cover;
         }
 
         * {
 
-            font-family: muli;
+
+            color: #f5df47;
 
         }
 
         h3 {
             font-size: 30px;
             margin-bottom: 20px;
-
+            width: 100%;
         }
 
         .contact-info h3 {
@@ -46,11 +49,11 @@
         }
 
         .contact-info p a {
-            color: #555;
+            color: #f5df47;
         }
 
         .contact-info i {
-            color: green;
+            color: #f5df47;
             margin-right: 10px;
         }
 
@@ -68,7 +71,7 @@
             box-shadow: 0 0 8px #bbb;
         }
 
-        .btn {
+        .cf2 {
             display: inline-block;
             padding: 12px 24px;
             background-color: green;
@@ -83,18 +86,260 @@
         .btn:hover {
             background-color: greenyellow;
         }
+
+        .navbar {
+            background-color: #001840;
+
+        }
+
+        .navbar-nav {
+            align-items: center;
+
+        }
+
+        .navbar .navbar-nav .nav-link {
+            padding: 30px;
+            font-size: 20px;
+        }
+
+
+
+        .btn-group {
+            margin: 15px;
+
+        }
+
+        .d-block {
+            height: 550px;
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+
+
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("logo.jpg");
+        }
+
+        .nav-link {
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            color: yellow;
+        }
+
+        .dropdown-item {
+            text-decoration: none;
+        }
+
+        img {
+            width: 130px;
+            height: 90px;
+            padding: 5px;
+
+        }
+
+        .mb-4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fa-brands {
+            transition: .6s;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+
+        }
+
+        .fa-brands:hover {
+            transform: translate(0, -10px);
+        }
+
+        .btn-floating:hover {
+            background-color: #3b5999;
+        }
+
+        .btn-floating1:hover {
+            background-color: red;
+        }
+
+        .btn-floating2:hover {
+            background-color: #e4405f;
+        }
+
+        .btn-floating3:hover {
+            background-color: rgba(0, 128, 0, 0.694);
+        }
+
+        footer {
+            background-color: #001840;
+        }
+         /* review  */
+    .feedback-form {
+    /* background-color: #b4e8ff; */
+    padding: 20px;
+    /* border: 2px solid  #317396 ; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height: 300px;
+    width: 350px; */
+    height: 100%;
+    width: 100%;
+}
+.modal-content{
+  background-color: #b4e8ff;
+}
+
+.rating {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: #fefefe;
+    cursor: pointer;
+}
+.rating input:checked ~ label {
+    color: #f2ed6a; 
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+        h3 {
+            text-align: center;
+            background-color: #f5df47;
+            color: #001840;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+        }
+        .cf4{
+    background-color: #49ace1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cf4:hover {
+    background-color:  #317396;
+}
+.modal-dialog{
+  background-color: #f5df47;
+}
     </style>
 </head>
-
-<body>
+<!-- nav -->
+<nav class="navbar navbar-expand-sm navbar-dark text-warning">
     <div class="container-fluid">
-        <h2>Contact Us </h2>
+        <a class="navbar-brand" href=""><img src="images/main/20231225_212732_0000.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav  me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery (1).html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="us.html">CONTACT</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="sitemap.pdf">SITEMAP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a role="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      FEEDBACK
+                    </a>
+                  </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-light cf1">Menu</button>
+                <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">toggle dropdown</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark  ">
+                    <li><a class="dropdown-item" href="shirts.html">SHIRTS</a></li>
+                    <li><a class="dropdown-item" href="skirts.html">SKIRTS</a></li>
+                    <li><a class="dropdown-item" href="frocks.html">FROCKS</a></li>
+                    <li><a class="dropdown-item" href="pt shirts.html">P.T T-SHIRTS</a></li>
+                    <li><a class="dropdown-item" href="belts.html"> BELTS</a></li>
+                    <li><a class="dropdown-item" href="logos.html">LOGOS</a></li>
+                    <li><a class="dropdown-item" href="pt shorts.html">P.T SHORTS</a></li>
+                    <li><a class="dropdown-item" href="tie.html">TIE</a></li>
+                    <li><a class="dropdown-item" href="p.t trousers.html">P.T. TRACK PANTS</a></li>
+                    <li><a class="dropdown-item" href="socks.html ">SOCKS</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <!-- modal  -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-body ">
+          <div class="feedback-form" id="feedback">
+            <h2>Feedback Form</h2>
+            <p>Please rate your experience:</p>
+            <div class="rating" id="rating">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+            </div>
+            
+            <textarea placeholder="Enter your feedback"></textarea>
+            <button type="submit" class="cf4">Submit</button>
+            <button type="button" class="cf4" data-bs-dismiss="modal">Close</button>
+         
+
+         
+        </div>
+        </div>
+        <div class="modal-footer">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+<body>
+    <div class="container">
+        <h2>CONTACT US</h2>
         <div class="row">
             <div class="col-md-6">
 
                 <div class="contact-wrapper">
                     <form action="" method="post" name="Form1">
-                        <h3>send us a message</h3>
+                        <h3>SEND US A MESSAGE</h3>
                         <div>
                             <label for="fn">First Name</label>
                             <input type="text" name="" id="fn" class="form-control">
@@ -115,7 +360,7 @@
                                 placeholder="Your Message"></textarea>
                         </div>
                         <div>
-                            <input type="button" class="btn btn-info" value="submit" name="" id="btn"
+                            <input type="button" class="btn btn-info cf2" value="submit" name="" id="btn"
                                 onclick="validate()">
                         </div>
 
@@ -124,10 +369,13 @@
             <div class="col-md-6">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><i class="fa-solid fa-phone"></i>+92378598716</p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:03129331341"> +92378598716</p>
                     <p><i class="fa-solid fa-envelope"></i><a
                             href="mailto:uroojmehrab286@gmail.com">maverickdresses@gmail.com</a></p>
-                    <p><i class="fa-solid fa-location-dot"></i>5498 Street, Karachi.Pakistan</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.137712000721!2d67.03045847393764!3d24.927378142579396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1703244313441!5m2!1sen!2s" width="500" height="410" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><i class="fa-solid fa-location-dot"></i>5498 Street, Karachi.Pakistan</p><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.137712000721!2d67.03045847393764!3d24.927378142579396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1703244313441!5m2!1sen!2s"
+                        width="500" height="410" style="border:5;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 </form>
             </div>
@@ -143,14 +391,14 @@
             if (firstname == 0) {
                 document.getElementById("fnm").innerHTML = "Please enter your First Name";
                 document.getElementById("fnm").style.color = "red";
-                // document.getElementById("fnm").style.borderColor = "green";
+
                 document.getElementById("fn").style.borderColor = "red";
 
             } else if (firstname != 0) {
                 document.getElementById("fnm").innerHTML = "";
                 document.getElementById("fn").style.borderColor = "green";
             }
-            //
+
             if (lastname == 0) {
                 document.getElementById("lnm").innerHTML = "Please enter your last Name";
                 document.getElementById("lnm").style.color = "red";
@@ -160,7 +408,7 @@
                 document.getElementById("lnm").innerHTML = "";
                 document.getElementById("ln").style.borderColor = "green";
             }
-            //
+
             if (email == 0) {
                 document.getElementById("eml").innerHTML = "Please enter your email";
                 document.getElementById("eml").style.color = "red";
@@ -173,6 +421,193 @@
             }
         }
     </script>
+    </div>
+    <!-- location -->
+    <div class="containr-fluid" >
+
+        <h3>GULSHAN-E-IQBAL</h3>
+        <div class="container-fluid">
+            <div class="row" id="Locator">
+                <div class="col-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115780.45387187306!2d66.88025447317926!3d24.927328005044533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338caa5ac57cb%3A0x2c4b1fc512ab6bb!2sAptech%20Computer%20Education%20Gulshan-e-Iqbal%20Campus!5e0!3m2!1sen!2s!4v1703873906079!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-6">
+                    <p><i class="fa-solid fa-location-dot"></i>3rd Floor,Rimm Jhim Shopping Center,Suit No 308, A-486
+                        Allama Shabbir Ahmed USmani Road,Block 6 Gulshan-e- Iqbal, Karachi,Pakistan</p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:03129331341" class="text-white"
+                        style="text-decoration: none;"> +92378598716</p>
+                    <p><i class="fa-solid fa-envelope"></i><a
+                            href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                            style="text-decoration: none;">maverickdresses@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <h3> GARDEN</h3>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57918.44205796847!2d66.94802334863282!3d24.867175000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b1566c46f%3A0x65318f4eb62c7aa8!2sAptech%20Computer%20Education%20Garden%20Center!5e0!3m2!1sen!2s!4v1703874443881!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-6">
+                <p><i class="fa-solid fa-location-dot"></i>APWA Complex, 1st Floor ,Agha Khan 3 Road,Garden EAst Saddar
+                    Town, Karachi ,Pakistan</p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:03129331341" class="text-white"
+                    style="text-decoration: none;"> +923895682695</p>
+                <p><i class="fa-solid fa-envelope"></i><a
+                        href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                        style="text-decoration: none;">maverickdresses@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <h3>NORTH NAZIMABAD</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115780.41133204958!2d66.88059809726563!3d24.927373300000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1703873652672!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-6">
+                <p><i class="fa-solid fa-location-dot"></i>5498 Street, Karachi.Pakistan</p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:03129331341" class="text-white"
+                    style="text-decoration: none;"> +923572890543</p>
+                <p><i class="fa-solid fa-envelope"></i><a
+                        href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                        style="text-decoration: none;">maverickdresses@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <h3>CLIFTON</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.802142644328!2d67.03101951059382!3d24.836439077853033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dc578155555%3A0x3ae3774540a5995b!2sAptech%20Computer%20Education!5e0!3m2!1sen!2s!4v1703874331349!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-6">
+                <p><i class="fa-solid fa-location-dot"></i>Glass Tower,Block 8 Frere Town ,Karachi ,pakistan</p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:03129331341" class="text-white"
+                    style="text-decoration: none;">  +923865432786</p>
+                <p><i class="fa-solid fa-envelope"></i><a
+                        href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                        style="text-decoration: none;">maverickdresses@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <footer class=" text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h2 class="text-upercase mb-4 font-weight-bold text-warning">Maverick Dresses</h2>
+                    <p>Maverick Dresses is leading Uniform Manufacturers in the country.We supply many
+                        schools in country and we give them the best uniforms.We supply affordable
+                        school uniforms for girls and boys. When clients come, we cater to client's vision.
+                        As a team of professionals we understand what clients want and deliver the best
+                        results!</p>
+
+
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-upercase mb-4 font-weight-bold text-warning">CUSTOMER CARE</h5>
+
+                    <p> <a href="us.html" class="text-white" style="text-decoration: none;">Contact Us</a>
+                    </p>
+
+
+
+                    <h5 class="text-upercase mb-4 font-weight-bold text-warning">INFORMATION</h5>
+                    <p>
+                        <a href="aboutus.html" class="text-white" style="text-decoration: none;">About Us</a>
+                    </p>
+                    <p> <a href="feedback.html" class="text-white" style="text-decoration: none;">Feedback</a>
+                    </p>
+                    <p> <a href="us.html#locator" class="text-white" style="text-decoration: none;">Store Locator</a>
+                    </p>
+
+
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                    <h5 class="text-upercase mb-4 font-weight-bold text-warning">CONTACT US</h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot  "></i>maverick Dresses Head Office 1.5Km,
+                        Nazimabad, Karachi, Pakistan.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone "></i><a href="tel:03129331341" class="text-white"
+                            style="text-decoration: none;"> +923865432786</a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i><a href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                            style="text-decoration: none;">maverickdresses@gmail.com</a>
+                    </p>
+
+
+                </div>
+
+            </div>
+            <hr class="mb-4 ">
+            <div class="row align-items-center">
+
+                <p>
+                    &copy; 2023-24 - All Rights Reserved by:
+                    <a href="#" style="text-decoration: none;">
+                        <strong class="text-warning ">Maverick Dresses</strong>
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline"></ul>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/uniformersofficial/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.pinterest.com/thentbhshop/" target="_blank" class="btn-floating1 btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/threadsuniform/?hl=en" target="_blank" class="btn-floating2 btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://wa.me/03219231341" target="_blank" class="btn-floating3 btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-square-whatsapp"></i></a>
+                </li>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>

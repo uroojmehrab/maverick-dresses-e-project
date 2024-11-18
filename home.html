@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js\bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      padding: 0px;
+    }
+
+    body {
+      background-color: #f5df47;
+    }
+
+    .navbar {
+      background-color: #001840;
+    }
+
+    img {
+      width: 130px;
+      height: 90px;
+      padding: 5px;
+    }
+
+    .navbar-nav {
+      align-items: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      padding: 30px;
+      font-size: 20px;
+    }
+
+    .form-control {
+      width: 250px;
+    }
+
+    .btn-group {
+      margin: 15px;
+    }
+
+    .d-block {
+      height: 550px;
+      width: 100%;
+    }
+
+    .card {
+      overflow: hidden;
+      position: relative;
+      border: 3px solid rgba(83, 83, 83, 0.133);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .card-body {
+      width: 100%;
+      height: 100%;
+      bottom: -100%;
+      right: 0;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.608);
+      color: white;
+      align-items: center;
+      transition: 0.5s;
+    }
+
+    .card:hover .card-body {
+      bottom: 0;
+    }
+
+    .card-title {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-left: auto;
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-btn {
+      color: white;
+      background-color: #3380FF;
+      border-radius: 25px;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin-left: auto;
+      margin-top: auto;
+      text-align: center;
+    }
+
+    */ .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("logo.jpg");
+    }
+
+    .nav-link {
+      text-decoration: none;
+    }
+
+    .nav-item:hover {
+      color: yellow;
+    }
+
+    .dropdown-item {
+      text-decoration: none;
+    }
+
+    .mb-4 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .fa-brands {
+      transition: .6s;
+      box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    }
+
+    .fa-brands:hover {
+      transform: translate(0, -10px);
+    }
+
+    .btn-floating:hover {
+      background-color: #3b5999;
+    }
+
+    .btn-floating1:hover {
+      background-color: red;
+    }
+
+    .btn-floating2:hover {
+      background-color: #e4405f;
+    }
+
+    .btn-floating3:hover {
+      background-color: rgba(0, 128, 0, 0.694);
+    }
+
+    footer {
+      background-color: #001840;
+    }
+
+    /* review  */
+    .feedback-form {
+    /* background-color: #b4e8ff; */
+    padding: 20px;
+    /* border: 2px solid  #317396 ; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height: 300px;
+    width: 350px; */
+    height: 100%;
+    width: 100%;
+}
+.modal-content{
+  background-color: #b4e8ff;
+}
+
+.rating {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: #fefefe;
+    cursor: pointer;
+}
+.rating input:checked ~ label {
+    color: #f2ed6a; 
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cf4{
+    background-color: #49ace1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cf4:hover {
+    background-color:  #317396;
+}
+.modal-dialog{
+  background-color: #f5df47;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark text-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""><img src="images/main/20231225_212732_0000.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav  me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">HOME</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery (1).html">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="us.html">CONTACT</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">ABOUT US</a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="sitemap.pdf">SITEMAP</a>
+          </li>
+          <li class="nav-item">
+            <a role="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              FEEDBACK
+            </a>
+          </li>
+        </ul>
+        <div class="btn-group">
+          <button type="button" class="btn btn-outline-light cf1">Menu</button>
+          <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="visually-hidden">toggle dropdown</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark  ">
+            <li><a class="dropdown-item" href="shirts.html">SHIRTS</a></li>
+            <li><a class="dropdown-item" href="skirts.html">SKIRTS</a></li>
+            <li><a class="dropdown-item" href="frocks.html">FROCKS</a></li>
+            <li><a class="dropdown-item" href="pt shirts.html">P.T T-SHIRTS</a></li>
+            <li><a class="dropdown-item" href="belts.html"> BELTS</a></li>
+            <li><a class="dropdown-item" href="logos.html">LOGOS</a></li>
+            <li><a class="dropdown-item" href="pt shorts.html">P.T SHORTS</a></li>
+            <li><a class="dropdown-item" href="tie.html">TIE</a></li>
+            <li><a class="dropdown-item" href="p.t trousers.html">P.T. TRACK PANTS</a></li>
+            <li><a class="dropdown-item" href="socks.html ">SOCKS</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- modal  -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-body ">
+          <div class="feedback-form" id="feedback">
+            <h2>Feedback Form</h2>
+            <p>Please rate your experience:</p>
+            <div class="rating" id="rating">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+            </div>
+            
+            <textarea placeholder="Enter your feedback"></textarea>
+            <button type="submit" class="cf4">Submit</button>
+            <button type="button" class="cf4" data-bs-dismiss="modal">Close</button>
+         
+
+         
+        </div>
+        </div>
+        <div class="modal-footer">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- carousel -->
+  <div class="container-fluid g-0" id="carousel">
+    <div class="carousel slide" id="carouselslideshow" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button"  data-bs-target="#carouselslideshow" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="slide 1"></button>
+        <button type="button" data-bs-target="#carouselslideshow" data-bs-slide-to="1" aria-label="slide 2"></button>
+        <button type="button" data-bs-target="#carouselslideshow" data-bs-slide-to="2" aria-label="slide 3"></button>
+        <button type="button" data-bs-target="#carouselslideshow" data-bs-slide-to="3" aria-label="slide 4"></button>
+        <button type="button" data-bs-target="#carouselslideshow" data-bs-slide-to="4" aria-label="slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/pexels-bernard-brown-8080929.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/pexels-nasirun-khan-15166849.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src=" images/pexels-thirdman-8926642.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/pexels-thirdman-8926648.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src=" images/pexels-yan-krukau-8613307.jpg" alt="" class="d-block w-100">
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carouselslideshow" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselslideshow" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">next</span>
+        </button>
+      </div>
+    </div>
+    <!-- card1 -->
+    <div class="container-fluid " id="card">
+      <div class="row gy-3 ">
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/shirts/4c1401fbd4e8a6d4477125bc6d91840e.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">SHIRTS</h1>
+                <a href="shirts.html"> <button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/skirts/12c91a1b97c6454c7ccf1f48325b227d.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">SKIRTS</h1>
+                <a href="skirts.html"><button class="card-btn ">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/frocks/1e1eeecd13ec1bbae4a2aaca4b5454f6.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">FROCKS</h1>
+                <a href="frocks.html"> <button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card4 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/pt t-shirts/09fbcb6f0e9be478860d52a089abd6a9.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">P.T. T-SHIRTS</h1>
+                <a href="pt shirts.html"><button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/belts/c80fd40a24b873810027001a213dc0d2.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">BELTS</h1>
+                <a href="belts.html"><button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/logos/20b0022269a94fc53fa856fccd481370.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">LOGOS</h1>
+                <a href="logos.html"> <button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img
+              src="images/pt shorts/Adidas Bottoms _ Nwt Adidas Squadra 21 Shorts In Navy Blue Size Youth Medium _ Color_ Blue _ Size_ Mb.jpeg"
+              class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">P.T SHORTS</h1>
+                <a href="pt shorts.html"> <button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- catd 8 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/tie/1b5c46ac258ac820ba473c03dfb8f913.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">TIE</h1>
+                <a href="tie.html"><button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"> </div>
+        <!-- card 9 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/pt trousers/09f561ae1839e59e344a7d8bf95c2a70.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">P.T. TRACK PANTS</h1>
+                <a href="p.t trousers.html"><button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 10 -->
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="images/socks/c05413b1ef65a8af0c6d9706e89f2ddd.jpg" class="card-img" alt="">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h1 class="card-title">SOCKS</h1>
+                <a href="socks.html"><button class="card-btn">MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class=" text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h2 class="text-upercase mb-4 font-weight-bold text-warning">Maverick Dresses</h2>
+            <p>Maverick Dresses is leading Uniform Manufacturers in the country.We supply many
+              schools in country and we give them the best uniforms.We supply affordable
+              school uniforms for girls and boys. When clients come, we cater to client's vision.
+              As a team of professionals we understand what clients want and deliver the best
+              results!</p>
+          </div>
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-upercase mb-4 font-weight-bold text-warning">CUSTOMER CARE</h5>
+            <p><a href="us.html" class="text-white" style="text-decoration: none;">Contact Us</a></p>
+            <h5 class="text-upercase mb-4 font-weight-bold text-warning">INFORMATION</h5>
+            <p>
+              <a href="aboutus.html" class="text-white" style="text-decoration: none;">About Us</a>
+            </p>
+            <p> <a href="feedback.html" class="text-white" style="text-decoration: none;">Feedback</a>
+            </p>
+            <p> <a href="us.html#Locator" class="text-white" style="text-decoration: none;">Store Locator</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">
+            <h5 class="text-upercase mb-4 font-weight-bold text-warning">CONTACT US</h5>
+            <p>
+              <i class="fa-solid fa-location-dot "></i>maverick Dresses Head Office 1.5Km,
+              Nazimabad, Karachi, Pakistan.
+            </p>
+            <p>
+              <i class="fa-solid fa-phone "></i>+9231567437
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i><a href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                style="text-decoration: none;">maverickdresses@gmail.com</a>
+            </p>
+          </div>
+
+        </div>
+        <hr class="mb-4 ">
+        <div class="row align-items-center">
+          <p>
+            &copy; 2023-24 - All Rights Reserved by:
+            <a href="#" style="text-decoration: none;">
+              <strong class="text-warning ">Maverick Dresses</strong>
+            </a>
+          </p>
+
+        </div>
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline"></ul>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/uniformersofficial/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"> <i
+                class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.pinterest.com/thentbhshop/" target="_blank" class="btn-floating1 btn-sm text-white" style="font-size: 23px;"> <i
+                class="fa-brands fa-pinterest"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/threadsuniform/?hl=en" target="_blank" class="btn-floating2 btn-sm text-white" style="font-size: 23px;"> <i
+                class="fa-brands fa-square-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://wa.me/03219231341" target="_blank" class="btn-floating3 btn-sm text-white"  style="font-size: 23px;"> <i
+                class="fa-brands fa-square-whatsapp"></i></a>
+          </li>
+        </div>
+      </div>
+  </div>
+  </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e project/css/bootstrap.min.css">
+    <script src="e project/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #f5df47;
+        }
+
+        .div1 {
+            width: 70px;
+            height: 30px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            align-content: end;
+        }
+
+        .card:hover {
+            background-color: rgba(0, 0, 0, 0.404);
+
+        }
+
+        .card {
+            height: 380px;
+            margin: 10px;
+        }
+
+        .card-img {
+            height: 220px;
+        }
+
+        .card {
+            transition: tranform 0.2 ease-in-out;
+        }
+
+        .card:hover {
+            animation: scaleUp 0.3s ease-in-out;
+            transform: scale(1.05);
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale (1.05P);
+            }
+
+        }
+
+        .cf1 {
+            border-radius: 20px;
+            background-color: #19d1ff;
+            padding: 4px;
+            font-size: small;
+        }
+
+        .cf1:hover {
+            background-color: black;
+        }
+
+        .navbar {
+            background-color: #001840;
+
+        }
+
+        .navbar-nav {
+            align-items: center;
+
+        }
+
+        .navbar .navbar-nav .nav-link {
+            padding: 30px;
+            font-size: 20px;
+        }
+
+
+
+        .btn-group {
+            margin: 15px;
+
+        }
+
+        .d-block {
+            height: 550px;
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+
+
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("logo.jpg");
+        }
+
+        .nav-link {
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            color: yellow;
+        }
+
+        .dropdown-item {
+            text-decoration: none;
+        }
+
+        img {
+            width: 130px;
+            height: 90px;
+            padding: 5px;
+
+        }
+
+        .row1 {
+            text-align: center;
+
+
+            color: #001840;
+        }
+
+        .mb-4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fa-brands {
+            transition: .6s;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+
+        }
+
+        .fa-brands:hover {
+            transform: translate(0, -10px);
+        }
+
+        .btn-floating:hover {
+            background-color: #3b5999;
+        }
+
+        .btn-floating1:hover {
+            background-color: red;
+        }
+
+        .btn-floating2:hover {
+            background-color: #e4405f;
+        }
+
+        .btn-floating3:hover {
+            background-color: rgba(0, 128, 0, 0.694);
+        }
+
+        footer {
+            background-color: #001840;
+        }
+         /* review  */
+    .feedback-form {
+    /* background-color: #b4e8ff; */
+    padding: 20px;
+    /* border: 2px solid  #317396 ; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height: 300px;
+    width: 350px; */
+    height: 100%;
+    width: 100%;
+}
+.modal-content{
+  background-color: #b4e8ff;
+}
+
+.rating {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: #fefefe;
+    cursor: pointer;
+}
+.rating input:checked ~ label {
+    color: #f2ed6a; 
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+        .cf4{
+    background-color: #49ace1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cf4:hover {
+    background-color:  #317396;
+}
+.modal-dialog{
+  background-color: #f5df47;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark text-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="images/main/20231225_212732_0000.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav  me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery (1).html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="us.html">CONTACT</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+                   
+                  
+                      <li class="nav-item">
+                        <a class="nav-link" href="sitemap.pdf">SITEMAP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a role="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          FEEDBACK
+                        </a>
+                      </li>
+                </ul>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light  ">Menu</button>
+                    <button type="button" class="btn btn-outline-light  dropdown-toggle dropdown-toggle "
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">toggle dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark  ">
+                        <li><a class="dropdown-item" href="shirts.html">SHIRTS</a></li>
+                        <li><a class="dropdown-item" href="skirts.html">SKIRTS</a></li>
+                        <li><a class="dropdown-item" href="frocks.html">FROCKS</a></li>
+                        <li><a class="dropdown-item" href="pt shirts.html">P.T T-SHIRTS</a></li>
+                        <li><a class="dropdown-item" href="belts.html">BELTS</a></li>
+                        <li><a class="dropdown-item" href="logos.html">LOGOS</a></li>
+                        <li><a class="dropdown-item" href="pt shorts.html">P.T SHORTS</a></li>
+                        <li><a class="dropdown-item" href="tie.html">TIE</a></li>
+                        <li><a class="dropdown-item" href="p.t trousers.html">P.T. TRACK PANTS</a></li>
+                        <li><a class="dropdown-item" href="socks.html">SOCKS</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+      <!-- modal  -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-body ">
+          <div class="feedback-form" id="feedback">
+            <h2>Feedback Form</h2>
+            <p>Please rate your experience:</p>
+            <div class="rating" id="rating">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+            </div>
+            
+            <textarea placeholder="Enter your feedback"></textarea>
+            <button type="submit" class="cf4">Submit</button>
+            <button type="button" class="cf4" data-bs-dismiss="modal">Close</button>
+         
+
+         
+        </div>
+        </div>
+        <div class="modal-footer">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- cards -->
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row1">
+                <div class="col-12">
+                    <h1>SKIRTS</h1>
+                </div>
+            </div>
+        </div>
+        <!-- 1 -->
+        <div class="row gy-3">
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/1e5afc21dfb380d19d7a05a931c9779b.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1800.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/1fdf81fd6ff6ef41bd1be696042402f8.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:2000.00</h5>
+                        <button type="button" class="btn cf1 ">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/5bfab5b971cf32fa67e34f49b4586658.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1600.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/12c91a1b97c6454c7ccf1f48325b227d.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1400.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/22e2957dcd0a83867c15f584f12dbde2.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1400.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/470a3b55881d29bd003ced4dfc9c7ece.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1900.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/f524f82676ccf53d7ae0a2fb5bff11b4.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1800.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <link rel="stylesheet" href="">
+                    <img src="images/skirts/65df8712c0e9ed52ec3f6e7b39eaa64c.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                        <div class="div1">New</div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="p1">Skirts For Girls Now Available In (All Sizes)</p>
+                        <h5>Rs:1600.00</h5>
+                        <button type="button" class="btn cf1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class=" text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h2 class="text-upercase mb-4 font-weight-bold text-warning">Maverick Dresses</h2>
+                    <p>Maverick Dresses is leading Uniform Manufacturers in the country.We supply many
+                        schools in country and we give them the best uniforms.We supply affordable
+                        school uniforms for girls and boys. When clients come, we cater to client's vision.
+                        As a team of professionals we understand what clients want and deliver the best
+                        results!</p>
+
+
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-upercase mb-4 font-weight-bold text-warning">CUSTOMER CARE</h5>
+
+                    <p> <a href="us.html" class="text-white" style="text-decoration: none;">Contact Us</a>
+                    </p>
+
+
+
+                    <h5 class="text-upercase mb-4 font-weight-bold text-warning">INFORMATION</h5>
+                    <p>
+                        <a href="aboutus.html" class="text-white" style="text-decoration: none;">About Us</a>
+                    </p>
+                    <p> <a href="feedback.html" class="text-white" style="text-decoration: none;">Feedback</a>
+                    </p>
+                    <p> <a href="us.html#locator" class="text-white" style="text-decoration: none;">Store Locator</a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                    <h5 class="text-upercase mb-4 font-weight-bold text-warning">CONTACT US</h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot "></i>maverick Dresses Head Office 1.5Km,
+                        Nazimabad, Karachi, Pakistan.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone "></i>+923189956432
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i><a href="mailto:uroojmehrab286@gmail.com" class="text-white"
+                            style="text-decoration: none;">maverickdresses@gmail.com</a>
+                    </p>
+
+
+                </div>
+
+            </div>
+            <hr class="mb-4 ">
+            <div class="row align-items-center">
+
+                <p>
+                    &copy; 2023-24 - All Rights Reserved by:
+                    <a href="#" style="text-decoration: none;">
+                        <strong class="text-warning ">Maverick Dresses</strong>
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline"></ul>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/uniformersofficial/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.pinterest.com/thentbhshop/" target="_blank" class="btn-floating1 btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/threadsuniform/?hl=en" target="_blank" class="btn-floating2 btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://wa.me/03219231341" target="_blank" class="btn-floating3 btn-sm text-white" style="font-size: 23px;"> <i
+                            class="fa-brands fa-square-whatsapp"></i></a>
+                </li>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

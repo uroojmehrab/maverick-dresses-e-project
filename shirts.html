@@ -10,164 +10,165 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            background-color: #f5df47;
+</head>
+<style>
+    body {
+        background-color: #f5df47;
+    }
+
+    .div1 {
+        width: 70px;
+        height: 30px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        align-content: end;
+    }
+
+    .card:hover {
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+
+    .card {
+        height: 380px;
+        margin: 10px;
+    }
+
+    .card-img {
+        height: 220px;
+    }
+
+    .card {
+        transition: transform 0.2 ease-in-out;
+    }
+
+    .card:hover {
+        animation: scaleUp 0.3s ease-in-out;
+        transform: scale(1.05);
+    }
+
+    @keyframes scaleUp {
+        0% {
+            transform: scale(1);
         }
 
-        .div1 {
-            width: 70px;
-            height: 30px;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            align-content: end;
-        }
-
-        .card:hover {
-            background-color: rgba(0, 0, 0, 0.404);
-        }
-
-        .card {
-            height: 380px;
-            margin: 10px;
-        }
-
-        .card-img {
-            height: 220px;
-        }
-
-        .card {
-            transition: transform 0.2 ease-in-out;
-        }
-
-        .card:hover {
-            animation: scaleUp 0.3s ease-in-out;
+        100% {
             transform: scale(1.05);
         }
-
-        @keyframes scaleUp {
-            0% {
-                transform: scale(1);
-            }
-
-            100% {
-                transform: scale(1.05);
-            }
-        }
+    }
 
 
-        .container-fluid {
-            display: flex;
-            justify-content: center;
+    .container-fluid {
+        display: flex;
+        justify-content: center;
 
-        }
+    }
 
-        .cf1 {
-            border-radius: 20px;
-            background-color: #19d1ff;
-            padding: 4px;
-            font-size: small;
-        }
+    .cf1 {
+        border-radius: 20px;
+        background-color: #19d1ff;
+        padding: 4px;
+        font-size: small;
+    }
 
-        .cf1:hover {
-            background-color: black;
-        }
+    .cf1:hover {
+        background-color: black;
+    }
 
-        .navbar {
-            background-color: #001840;
+    .navbar {
+        background-color: #001840;
 
-        }
+    }
 
-        .navbar-nav {
-            align-items: center;
+    .navbar-nav {
+        align-items: center;
 
-        }
+    }
 
-        .navbar .navbar-nav .nav-link {
-            padding: 30px;
-            font-size: 20px;
-        }
+    .navbar .navbar-nav .nav-link {
+        padding: 30px;
+        font-size: 20px;
+    }
 
 
 
-        .btn-group {
-            margin: 15px;
+    .btn-group {
+        margin: 15px;
 
-        }
+    }
 
-        .d-block {
-            height: 550px;
-            width: 100%;
-        }
+    .d-block {
+        height: 550px;
+        width: 100%;
+    }
 
-        .navbar-toggler {
-            border-color: white;
+    .navbar-toggler {
+        border-color: white;
 
 
-        }
+    }
 
-        .navbar-toggler-icon {
-            background-image: url("logo.jpg");
-        }
+    .navbar-toggler-icon {
+        background-image: url("logo.jpg");
+    }
 
-        .nav-link {
-            text-decoration: none;
-        }
+    .nav-link {
+        text-decoration: none;
+    }
 
-        .nav-item:hover {
-            color: yellow;
-        }
+    .nav-item:hover {
+        color: yellow;
+    }
 
-        .dropdown-item {
-            text-decoration: none;
-        }
+    .dropdown-item {
+        text-decoration: none;
+    }
 
-        img {
-            width: 130px;
-            height: 90px;
-            padding: 5px;
+    img {
+        width: 130px;
+        height: 90px;
+        padding: 5px;
 
-        }
+    }
 
-        .mb-4 {
-            display: flex;
-            justify-content: center;
-        }
+    .mb-4 {
+        display: flex;
+        justify-content: center;
+    }
 
-        .fa-brands {
-            transition: .6s;
-            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    .fa-brands {
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
 
-        }
+    }
 
-        .fa-brands:hover {
-            transform: translate(0, -10px);
-        }
+    .fa-brands:hover {
+        transform: translate(0, -10px);
+    }
 
-        .btn-floating:hover {
-            background-color: #3b5999;
-        }
+    .btn-floating:hover {
+        background-color: #3b5999;
+    }
 
-        .btn-floating1:hover {
-            background-color: red;
-        }
+    .btn-floating1:hover {
+        background-color: red;
+    }
 
-        .btn-floating2:hover {
-            background-color: #e4405f;
-        }
+    .btn-floating2:hover {
+        background-color: #e4405f;
+    }
 
-        .btn-floating3:hover {
-            background-color: rgba(0, 128, 0, 0.694);
-        }
+    .btn-floating3:hover {
+        background-color: rgba(0, 128, 0, 0.694);
+    }
 
-        footer {
-            background-color: #001840;
-        }
-         /* review  */
-    .feedback-form {
+    footer {
+        background-color: #001840;
+    }
+     /* review  */
+     .feedback-form {
     /* background-color: #b4e8ff; */
     padding: 20px;
     /* border: 2px solid  #317396 ; */
@@ -209,12 +210,12 @@ textarea {
     box-sizing: border-box;
 }
 
-        .row1 {
-            text-align: center;
+    .row1 {
+        text-align: center;
 
-            color: #001840;
-        }
-        .cf4{
+        color: #001840;
+    }
+    .cf4{
     background-color: #49ace1;
     color: #fff;
     padding: 10px 20px;
@@ -230,8 +231,7 @@ textarea {
 .modal-dialog{
   background-color: #f5df47;
 }
-    </style>
-</head>
+</style>
 
 <body>
     <!-- nav -->
@@ -252,7 +252,7 @@ textarea {
                     <li class="nav-item">
                         <a class="nav-link" href="us.html">CONTACT</a>
                     </li>
-                   
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">ABOUT US</a>
                     </li>
@@ -282,7 +282,7 @@ textarea {
                         <li><a class="dropdown-item" href="logos.html">LOGOS</a></li>
                         <li><a class="dropdown-item" href="pt shorts.html">P.T SHORTS</a></li>
                         <li><a class="dropdown-item" href="tie.html">TIE</a></li>
-                        <li><a class="dropdown-item" href="p.t trousers.html">P.T. TRACK PANTS</a></li>
+                        <li><a class="dropdown-item" href="p.t trousers.html">P.T. TARCK PANTS</a></li>
                         <li><a class="dropdown-item" href="socks.html">SOCKS</a></li>
 
                     </ul>
@@ -325,7 +325,7 @@ textarea {
     <div class="container-fluid">
         <div class="row1">
             <div class="col-12">
-                <h1>TIE</h1>
+                <h1>SHIRTS</h1>
             </div>
         </div>
     </div>
@@ -334,41 +334,41 @@ textarea {
         <div class="row gy-3">
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/0ba5903ea54242009313b49fca24500a.jpg" alt="" class="card-img">
+                    <img src="images/shirts/60b57cf2d47a18288e6739a291d2018b.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">STies Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">SShirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:2500.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
             </div>
-            <!-- 2 -->
+            <!--2 -->
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/1b5c46ac258ac820ba473c03dfb8f913.jpg" alt="" class="card-img">
+                    <img src=" images/shirts/83a8d47a3c1f4be1f52b49b210c997ae.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:2200.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
             </div>
-            <!--3 -->
+            <!-- 3 -->
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/1c8b6d0168e51e75eb99d1d138465829.jpg" alt="" class="card-img">
+                    <img src="images/shirts/358d310ccb1e20588d2e20b316e9b5b1.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:1400.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
@@ -376,13 +376,13 @@ textarea {
             <!-- 4 -->
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/21b6aae90bc42df64a4605a9a7ba1318.jpg" alt="" class="card-img">
+                    <img src="images/shirts/01497e33738be9cfead1da5edffad482.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:2000.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
@@ -390,18 +390,18 @@ textarea {
 
         </div>
     </div>
-    <!--5 -->
+    <!-- 5-->
     <div class="container">
         <div class="row gy-3">
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/fa4b67e62414caffabb9e02a13ec7907.jpg" alt="" class="card-img">
+                    <img src="images/shirts/baf51ebcd5a7188311e47857f5d0e481.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:1200.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
@@ -409,13 +409,13 @@ textarea {
             <!-- 6 -->
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/3e9b025c4c3a14934deebd67e7985055.jpg" alt="" class="card-img">
+                    <img src="images/shirts/82530a22ca747ec738ebffa9b9661518.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:1600.00</h5>
                         <button type="button" class="btn cf1 ">Shop Now</button>
                     </div>
                 </div>
@@ -423,27 +423,27 @@ textarea {
             <!-- 7 -->
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/44db97843fc8c0ec4b0c52241b348583.jpg" alt="" class="card-img">
+                    <img src="images/shirts/dc2a516b70f22ebf6fdfc940acf729a5.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:2600.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
             </div>
-            <!--8 -->
+            <!-- 8 -->
             <div class="col-md-3">
                 <div class="card">
-                    <img src="images/tie/4897ab82125afea86db6b27ce3ce0fe2.jpg" alt="" class="card-img">
+                    <img src="images/shirts/cc195b0439acab582830527cd3c12ff9.jpg" alt="" class="card-img">
                     <div class="card-img-overlay">
                         <div class="div1">New</div>
                     </div>
                     <div class="card-footer">
-                        <p class="p1">Ties Now Available For Boys And Girls </p>
-                        <h5>Rs:600.00</h5>
+                        <p class="p1">Shirts For Boys And Girls Now Available In(All Sizes)</p>
+                        <h5>Rs:1400.00</h5>
                         <button type="button" class="btn cf1">Shop Now</button>
                     </div>
                 </div>
