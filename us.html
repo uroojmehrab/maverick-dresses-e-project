@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .container-fluid {
+            background-color: rgba(255, 255, 255, 0.158);
+            border-radius: 50px;
+
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+            font-size: 36px;
+
+        }
+
+        body {
+
+            background-image: url("white.jpg");
+            background-size: cover;
+        }
+
+        * {
+
+            font-family: muli;
+
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        .contact-info h3 {
+
+            margin-bottom: 40px;
+        }
+
+        .contact-info p a {
+            color: #555;
+        }
+
+        .contact-info i {
+            color: green;
+            margin-right: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .form-control:focus {
+            outline: none;
+            box-shadow: 0 0 8px #bbb;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn:hover {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h2>Contact Us </h2>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="contact-wrapper">
+                    <form action="" method="post" name="Form1">
+                        <h3>send us a message</h3>
+                        <div>
+                            <label for="fn">First Name</label>
+                            <input type="text" name="" id="fn" class="form-control">
+                            <label for="" id="fnm"></label>
+                        </div>
+                        <div>
+                            <label for="ln">Last Name</label>
+                            <input type="text" name="" id="ln" class="form-control">
+                            <label for="" id="lnm"></label>
+                        </div>
+                        <div>
+                            <label for="em">Email</label>
+                            <input type="text" name="" id="em" class="form-control">
+                            <label for="" id="eml"></label>
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <div>
+                            <input type="button" class="btn btn-info" value="submit" name="" id="btn"
+                                onclick="validate()">
+                        </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-phone"></i>+92378598716</p>
+                    <p><i class="fa-solid fa-envelope"></i><a
+                            href="mailto:uroojmehrab286@gmail.com">maverickdresses@gmail.com</a></p>
+                    <p><i class="fa-solid fa-location-dot"></i>5498 Street, Karachi.Pakistan</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.137712000721!2d67.03045847393764!3d24.927378142579396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1703244313441!5m2!1sen!2s" width="500" height="410" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function validate() {
+            var firstname = Form1.fn.value;
+            var lastname = Form1.ln.value;
+            var email = Form1.em.value;
+            if (firstname == 0) {
+                document.getElementById("fnm").innerHTML = "Please enter your First Name";
+                document.getElementById("fnm").style.color = "red";
+                // document.getElementById("fnm").style.borderColor = "green";
+                document.getElementById("fn").style.borderColor = "red";
+
+            } else if (firstname != 0) {
+                document.getElementById("fnm").innerHTML = "";
+                document.getElementById("fn").style.borderColor = "green";
+            }
+            //
+            if (lastname == 0) {
+                document.getElementById("lnm").innerHTML = "Please enter your last Name";
+                document.getElementById("lnm").style.color = "red";
+                document.getElementById("ln").style.borderColor = "red";
+
+            } else if (firstname != 0) {
+                document.getElementById("lnm").innerHTML = "";
+                document.getElementById("ln").style.borderColor = "green";
+            }
+            //
+            if (email == 0) {
+                document.getElementById("eml").innerHTML = "Please enter your email";
+                document.getElementById("eml").style.color = "red";
+                document.getElementById("em").style.borderColor = "red";
+
+            } else if (firstname != 0) {
+                document.getElementById("eml").innerHTML = "";
+                document.getElementById("em").style.borderColor = "green";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
